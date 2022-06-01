@@ -1,0 +1,64 @@
+.padre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+}
+.header, .izquierda, .derecha, .footer {
+    flex-grow: 1;
+    flex-basis: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.articulo {
+    flex-grow: 0.5;
+    flex-basis: 100%;
+}
+
+@media all and (min-width: 600px) {
+    .aside {flex: 1 1 auto;}
+}
+@media all and (min-width: 800px) {
+    .articulo {flex: 5 0;}
+    .izquierda {order: 1;}
+    .articulo {order: 2;}
+    .derecha {order: 3;}
+    .footer {order: 4;}
+}
+
+.header { 
+    background: linear-gradient(to right, #ff9934,#FFF, #118806);}
+.izquierda { background: linear-gradient(to right,#FFF, #959c94); ;}
+.derecha {background: linear-gradient(to left,#FFF, #959c94);}
+.articulo { background:#959c94}
+.footer {background: #959c94 ;}
+
+#img-tajmahal {
+    width: 100%;
+}
+#img-niños {
+    width: 100%;
+}
+
+#video {
+    width: 100%;  
+}
+
+.header>p {
+
+    position: relative;
+    margin: 2 2 0 auto ;
+    top: auto;
+    width: 100%;
+    display: inline-block;
+    font-weight: 900;
+    text-align: justify
+}
+.derecha>p {
+    font-weight: 450}
+.izquierda>p {
+        font-weight: 450}
+.footer {
+    font: #fff;
+}
